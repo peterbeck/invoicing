@@ -269,7 +269,12 @@
 		$tickuser = 'user';
 		$tickpasswd = 'password';
 		$tickdb = 'redmine';
-
+		
+		//there are three custom invoice fields:
+		// invoice_custom_ticket = Redmine Ticket#
+		// invoice_custom_ticket_from_date = Start Date of Tickets (if empty: all dates)
+		// invoice_custom_ticket_to_date = End Date of Ticket
+		
 		$con=mysqli_connect($tickhost,$tickuser,$tickpasswd,$tickdb);
 		
 		//weekdays in german language
